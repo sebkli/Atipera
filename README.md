@@ -1,27 +1,45 @@
 # Atipera
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+## Table of contents
 
-## Development server
+- [Overview](#overview)
+- [Installation](#installation)
+- [Technologies](#technologies)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Overview
 
-## Code scaffolding
+This repository contains the recruitment task
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+Navigate to the project directory:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+  cd  Atipera
+```
 
-## Running unit tests
+Install dependencies using npm:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+  npm install
+```
 
-## Running end-to-end tests
+Start the development server:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+  ng serve
+```
 
-## Further help
+Start the JSON server:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+  npx json-server db.json
+```
+
+Open your browser and visit http://localhost:4200/ to view the application.
+
+## Technologies
+
+- Angular
+- Typescript
+- Angular Material

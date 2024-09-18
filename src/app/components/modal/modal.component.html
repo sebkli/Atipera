@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>Edit: {{ data.value }}</h2>
+<mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Edit</mat-label>
+    <input matInput cdkFocusInitial [(ngModel)]="value" />
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-stroked-button color="warn" (click)="onNoClick()">Close</button>
+  <button mat-flat-button [mat-dialog-close]="value()">Save</button>
+</mat-dialog-actions>

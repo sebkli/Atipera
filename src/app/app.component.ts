@@ -1,13 +1,14 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { DataTableComponent } from './components/data-table/data-table.component';
+import { MaterialModule } from './material/material.module';
+import { APIService } from './services/api.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [DataTableComponent, MaterialModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  providers: [APIService, HttpClient],
 })
-export class AppComponent {
-  title = 'Atipera';
-}
+export class AppComponent {}
